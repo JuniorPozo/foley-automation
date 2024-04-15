@@ -1,0 +1,21 @@
+{
+  "name": "playwright",
+  "version": "1.0.0",
+  "description": "Automation Framework",
+  "main": "index.js",
+  "scripts": {
+    "tests:chromeqa": "npx playwright test --config=playwright.config.ts --project=Chrome-QA --headed",
+    "tests:edgeqa": "npx playwright test --config=playwright.config.ts --project=Edge-QA --headed",
+    "tests:firefoxqa": "npx playwright test --config=playwright.config.ts --project=Firefox-QA --headed",
+    "tests:webkitqa": "npx playwright test --config=playwright.config.ts --project=Webkit-QA --headed"
+  },
+  "author": "AVIO Consulting",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.43.0",
+    "@types/node": "^20.11.26",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.4.5",
+    "prettier": "3.2.5"
+  }
+}
